@@ -5,7 +5,7 @@ require_once 'src/Client/Service/datafile.php';
 
 $stage1 = $app['controllers_factory'];
 $stage1->get('/',  function() use($app) {
-  $path = "C:/xampp/htdocs/backend/data"; 
+  $path = dirname($_SERVER['DOCUMENT_ROOT'])."/data";
   $codes = array();
   $surveys = array();
   
