@@ -75,3 +75,13 @@ The aggregation will be different depending on the question type:
 * date: a list of `dates`
 
 The API result is not defined, do what you want, be creative and data centric.
+
+### Improvment
+
+To improve this API, we could:
+
+* Put stage1.php and stage2.php in Controller repository using a factory controller
+* Do more test on API configuration
+* Do more routes to get the survey per date, product or number of products for example
+* Do POST controller and form to be able to create a survey
+* Do more work to handle errors
