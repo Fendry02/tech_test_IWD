@@ -7,7 +7,8 @@ require_once 'src/Client/Service/datafile.php';
 $stage2 = $app['controllers_factory'];
 $stage2->get('/',  function($id) use($app) {
     // Définition de la "base de fichier"
-    $db = new Datafile("C:/xampp/htdocs/backend/data");
+    $path = dirname($_SERVER['DOCUMENT_ROOT'])."/data";
+    $db = new Datafile($path);
     $files = $db->findAll();
 
     // Retrouve une liste de fichier selon un id sur une liste de fichier
